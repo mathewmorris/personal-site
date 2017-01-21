@@ -97,10 +97,3 @@ gulp.task('build', function(callback) {
         callback
     )
 })
-
-// Deployment
-// ----------
-gulp.task('deploy', function() {
-    return gulp.src('./dist/**/*')
-        .pipe(ghPages());
-});
