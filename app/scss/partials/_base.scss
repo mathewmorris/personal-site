@@ -1,16 +1,66 @@
-// // Font weights
-// $light: 100;
-// $regular: 400;
-// $bold: 600;
-// // Base Font
-// $base-font-family: sans-serif;
-// $base-font-weight: $regular;
-// $base-font-size: 13px;
-// $base-line-height: 1.4;
-// // Fixed Font
-// $fixed-font-family: monospace;
-// $fixed-font-size: 85%;
-// $fixed-line-height: $base-line-height;
-// // Headings
-// $header-font-weight: $bold;
-// @import "modules/all";
+// ------------
+// Font weights
+// ------------
+$regular: 400;
+$bold: 700;
+$extra-bold: 800;
+// ---------
+// Base Font
+// ---------
+$quicksand: 'Quicksand',
+sans-serif;
+$quicksand-regular: $regular;
+$quicksand-bold: $bold;
+$base-font-size: 13px;
+$base-line-height: 1.4;
+// --------------
+// Open Sans Font
+// --------------
+$open-sans: 'Open Sans',
+sans-serif;
+$open-sans-bold: $extra-bold;
+//
+//
+@import "modules/all";
+//
+// --------------
+// Basic settings
+// --------------
+//
+body {
+    background-color: $dark-main;
+    color: $text-main;
+    font-family: $quicksand;
+    height: 100%;
+}
+
+.header {
+    background: url('../images/mountains.png') no-repeat center bottom;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    width: 100%;
+}
+
+.header-wrapper {
+    padding-top: 15%;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    margin-top: -30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $open-sans;
+    font-weight: $extra-bold;
+}
