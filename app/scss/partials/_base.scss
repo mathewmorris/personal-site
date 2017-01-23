@@ -46,7 +46,7 @@ body {
 }
 
 .header-wrapper {
-    padding-top: 15%;
+    padding-top: 15vh;
     text-align: center;
 }
 
@@ -62,5 +62,5 @@ h4,
 h5,
 h6 {
     font-family: $open-sans;
-    font-weight: $extra-bold;
+    font-weight: $open-sans-bold;
 }
