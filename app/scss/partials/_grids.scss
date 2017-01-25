@@ -1,0 +1,22 @@
+/* Fluid Images */
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto !important!
+}
+
+
+/* Wrapper Constraints :Mobile*/
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper:after,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
