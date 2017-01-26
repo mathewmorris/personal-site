@@ -71,12 +71,23 @@ body {
     display: none;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
 .menu {
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 9998;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .menu ul {
-    margin: 0;
+    margin: 50px 0 0;
     padding: 0;
     width: 100%;
 }
