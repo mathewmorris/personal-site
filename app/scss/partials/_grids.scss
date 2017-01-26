@@ -1,7 +1,5 @@
 /* Box-sizing all elements for grid layout */
 
-@import "variables";
-@import "mixins";
 *,
 *:after,
 *:before {
@@ -16,7 +14,7 @@
 img {
     width: auto;
     max-width: 100%;
-    height: auto !important!
+    height: auto !important;
 }
 
 
@@ -32,7 +30,7 @@ img {
     @extend %clearfix;
 }
 
-[class*='column-'] {
+[class*='col-'] {
     float: left;
     padding: 1em;
     width: 100%;
@@ -45,7 +43,7 @@ img {
         max-width: $grid-max-width;
     }
     @for $i from 1 through 12 {
-        .column-#{$i} {
+        .col-#{$i} {
             width: 100% / $grid-columns * $i;
         }
     }

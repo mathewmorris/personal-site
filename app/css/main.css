@@ -1,5 +1,17 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:800|Quicksand:400,700");
+.wrapper,
+.row {
+  *zoom: 1; }
+  .wrapper:before,
+  .row:before, .wrapper:after,
+  .row:after {
+    content: " ";
+    display: table; }
+  .wrapper:after,
+  .row:after {
+    clear: both; }
+
 body {
   background-color: #2A292B;
   color: #FFF;
@@ -14,10 +26,6 @@ body {
 
 .logo {
   width: 100%; }
-
-.header-wrapper {
-  padding-top: 15vh;
-  text-align: center; }
 
 .footer {
   text-align: center;
@@ -435,6 +443,159 @@ template {
  */
 [hidden] {
   display: none; }
+
+/* User Resets
+   ========================================================================== */
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+/* Box-sizing all elements for grid layout */
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Fluid Images */
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important; }
+
+/* Wrapper Constraints :Mobile*/
+.wrapper {
+  width: 100%;
+  margin: 0 auto; }
+
+[class*='col-'] {
+  float: left;
+  padding: 1em;
+  width: 100%;
+  min-height: 1px; }
+
+@media only screen and (min-width: 30em) {
+  .wrapper {
+    width: 95%;
+    max-width: 65em; }
+  .col-1 {
+    width: 8.33333%; }
+  .col-2 {
+    width: 16.66667%; }
+  .col-3 {
+    width: 25%; }
+  .col-4 {
+    width: 33.33333%; }
+  .col-5 {
+    width: 41.66667%; }
+  .col-6 {
+    width: 50%; }
+  .col-7 {
+    width: 58.33333%; }
+  .col-8 {
+    width: 66.66667%; }
+  .col-9 {
+    width: 75%; }
+  .col-10 {
+    width: 83.33333%; }
+  .col-11 {
+    width: 91.66667%; }
+  .col-12 {
+    width: 100%; } }
+
+body {
+  height: 1000px; }
+
+.logo-wrapper {
+  display: inline-block;
+  width: 100px;
+  padding: 20px 0 0 20px; }
+
+#mobile-menu-button {
+  width: 50px;
+  height: 45px;
+  position: relative;
+  float: right;
+  margin: 20px 20px 0 0;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer; }
+
+#mobile-menu-button span {
+  display: block;
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  background: #FFF;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out; }
+
+#mobile-menu-button span:nth-child(1) {
+  top: 2px; }
+
+#mobile-menu-button span:nth-child(2),
+#mobile-menu-button span:nth-child(3) {
+  top: 16px;
+  width: 80%; }
+
+#mobile-menu-button span:nth-child(4) {
+  top: 30px;
+  width: 90%; }
+
+#mobile-menu-button.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+#mobile-menu-button.open span:nth-child(2) {
+  transform: rotate(45deg); }
+
+#mobile-menu-button.open span:nth-child(3) {
+  transform: rotate(-45deg); }
+
+#mobile-menu-button.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+.hidden {
+  display: none; }
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+.menu-link {
+  color: #FFF;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center; }
+
+.menu-link:visited {
+  color: #FFF;
+  text-decoration: none; }
+
+.menu-link li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  padding: 10px; }
+
+.menu-link li:hover {
+  color: #FFF;
+  background: #245C5C; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
