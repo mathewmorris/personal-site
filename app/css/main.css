@@ -18,12 +18,6 @@ body {
   font-family: "Quicksand", sans-serif;
   height: 100%; }
 
-.header {
-  background: url("../images/mountains.png") no-repeat center bottom;
-  background-size: cover;
-  width: 100%;
-  height: 100vh; }
-
 .logo {
   width: 100%; }
 
@@ -452,6 +446,22 @@ ul {
 a {
   text-decoration: none; }
 
+/* Horizontal Lines after header tags*/
+.h-line {
+  display: block;
+  background: #FFF;
+  width: 55px;
+  height: 4px;
+  margin: 0 auto; }
+
+/* Mobile text quote */
+.i-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 24px;
+  margin-top: 20px; }
+
 /* Box-sizing all elements for grid layout */
 *,
 *:after,
@@ -569,11 +579,21 @@ body {
 .hidden {
   display: none; }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999; }
+
 .menu {
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9998;
+  position: fixed;
+  top: 0;
+  left: 0; }
 
 .menu ul {
-  margin: 0;
+  margin: 50px 0 0;
   padding: 0;
   width: 100%; }
 
@@ -596,6 +616,22 @@ body {
 .menu-link li:hover {
   color: #FFF;
   background: #245C5C; }
+
+.header {
+  background: url("../images/mountains.png") no-repeat center bottom;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.header * {
+  text-align: center;
+  padding: 0 .8em; }
+
+.hero-text {
+  padding-top: 4em; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
