@@ -1,0 +1,35 @@
+.work {
+    padding: 4.5em 0;
+}
+
+.project-container {
+    position: relative;
+}
+
+.project-img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 300px;
+}
+
+.project-text {
+    font-size: 1.5rem;
+    text-shadow: 0 0 15px #000;
+}
+
+.project-view {
+    width: 150px;
+    height: 30px;
+    color: $dark-main;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .875rem;
+    font-style: normal;
+}

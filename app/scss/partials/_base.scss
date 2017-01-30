@@ -57,18 +57,21 @@ h1 {
 
 h2 {
     font-size: 1.875em;
-    padding-top: 4.5em;
 }
 
 p {
     font-size: 1.5rem;
     font-weight: 200;
     text-align: center;
-    margin: 1.125rem 0.625rem;
+    margin: 1.125rem 0;
 }
 
 em {
     font-weight: 700;
     color: $accent-main;
     font-style: normal;
+}
+
+section {
+    padding: 4.5em 0.625rem;
 }
