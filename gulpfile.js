@@ -34,6 +34,11 @@ gulp.task('sass', function() {
         }));
 })
 
+gulp.task('favicon', function() {
+    return gulp.src('app/*.ico')
+        .pipe(gulp.dest('dist/'))
+})
+
 // Watchers
 gulp.task('watch', function() {
     gulp.watch('app/scss/**/*.scss', ['sass']);
@@ -93,7 +98,7 @@ gulp.task('default', function(callback) {
 
 gulp.task('build', function(callback) {
     runSequence(
-        'clean:dist', 'sass', ['useref', 'images', 'fonts'],
+        'clean:dist', 'sass', ['favicon', 'useref', 'images', 'fonts'],
         callback
     )
 })
