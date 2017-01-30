@@ -13,9 +13,16 @@ $(window).scroll(function() {
 
 })
 
-$('#mobile-menu-button').click(function() {
+function toggleMenu() {
     var button = $('#mobile-menu-button');
     var menu = $('.menu');
     button.toggleClass('open');
     menu.slideToggle().toggleClass('hidden');
+}
+
+$(document).ready(function() {
+    $('#mobile-menu-button').click(toggleMenu);
+
+    $('.menu-link').click(toggleMenu);
+
 })
