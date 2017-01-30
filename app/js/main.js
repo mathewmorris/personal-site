@@ -1,5 +1,3 @@
-
-
 $(window).scroll(function() {
     if ($(window).scrollTop() > 50) {
         $(".navbar").animate({
@@ -13,4 +11,11 @@ $(window).scroll(function() {
         }, 200)
     }
 
+})
+
+$('#mobile-menu-button').click(function() {
+    var button = $('#mobile-menu-button');
+    var menu = $('.menu');
+    button.toggleClass('open');
+    menu.slideToggle().toggleClass('hidden');
 })
