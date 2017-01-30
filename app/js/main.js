@@ -1,17 +1,4 @@
-$(document).ready(function() {
-    // initializeClock('countdown', deadline);
-    $("#mobile-menu-button").click(function() {
-        $(this).toggleClass('open');
-        $('.menu').slideToggle(600);
-    })
 
-
-
-
-
-
-
-})
 
 $(window).scroll(function() {
     if ($(window).scrollTop() > 50) {

@@ -1,4 +1,8 @@
-# mathewmorris.github.io
-My gh-pages portfolio site
-# mathewmorris.github.io
-# personal-site
+# This is my portfolio site
+### Hosted on gh-pages
+
+## Mockups
+### Desktop Version
+![Desktop Version of portfolio](mockups/desktop.png)
+### Mobile Version
+![Mobile Version of portfolio](mockups/mobile.png)
