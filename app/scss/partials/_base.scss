@@ -38,11 +38,6 @@ body {
     width: 100%;
 }
 
-.footer {
-    text-align: center;
-    margin-top: -30px;
-}
-
 h1,
 h2,
 h3,
@@ -51,4 +46,29 @@ h5,
 h6 {
     font-family: $open-sans;
     font-weight: $open-sans-bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.67em;
+}
+
+h1 {
+    font-size: 2.25em;
+}
+
+h2 {
+    font-size: 1.875em;
+    padding-top: 4.5em;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center;
+    margin: 1.125rem 0.625rem;
+}
+
+em {
+    font-weight: 700;
+    color: $accent-main;
+    font-style: normal;
 }
