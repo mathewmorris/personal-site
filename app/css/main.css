@@ -724,6 +724,9 @@ body {
 .social-1 {
   margin-left: .75rem; }
 
+.social-2 {
+  margin-bottom: .75rem; }
+
 .social {
   font-size: 4em;
   text-align: center;
@@ -733,7 +736,8 @@ body {
   margin-top: 2rem;
   background: url("../images/ocean.png") no-repeat center top;
   background-size: cover;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 1em; }
 
 .contact-button {
   margin-bottom: 4em; }
