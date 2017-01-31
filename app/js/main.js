@@ -20,10 +20,10 @@ function toggleMenu() {
     menu.slideToggle().toggleClass('hidden');
 }
 
-function scrollToId(id) {
+function scrollToEl(el) {
     $('html, body').animate({
-        scrollTop: $(id).offset().top - 72 + 'px'
-    }, 2000);
+        scrollTop: $(el).offset().top - 72 + 'px'
+    }, 1500);
 }
 
 $(document).ready(function() {
@@ -31,8 +31,12 @@ $(document).ready(function() {
 
     $('.menu-link').click(function() {
         var href = $(this).attr('href');
-        scrollToId(href);
+        scrollToEl(href);
         toggleMenu();
     });
+
+    $('#logo').click(function() {
+        scrollToEl('.header');
+    })
 
 })
