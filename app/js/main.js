@@ -20,9 +20,19 @@ function toggleMenu() {
     menu.slideToggle().toggleClass('hidden');
 }
 
+function scrollToId(id) {
+    $('html, body').animate({
+        scrollTop: $(id).offset().top - 72 + 'px'
+    }, 2000);
+}
+
 $(document).ready(function() {
     $('#mobile-menu-button').click(toggleMenu);
 
-    $('.menu-link').click(toggleMenu);
+    $('.menu-link').click(function() {
+        var href = $(this).attr('href');
+        scrollToId(href);
+        toggleMenu();
+    });
 
 })
