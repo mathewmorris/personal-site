@@ -35,8 +35,8 @@ gulp.task('sass', function() {
 })
 
 gulp.task('favicon', function() {
-    return gulp.src('app/*.ico')
-        .pipe(gulp.dest('dist/'))
+    return gulp.src('app/public/ico/*.ico')
+        .pipe(gulp.dest('dist/public/ico/'))
 })
 
 // Watchers
