@@ -1,15 +1,4 @@
 $(window).scroll(function() {
-    if ($(window).scrollTop() > 50) {
-        $(".navbar").animate({
-            backgroundColor: 'rgba(0,0,0,.8)',
-            paddingBottom: '.5em'
-        }, 200)
-    } else {
-        $(".navbar").animate({
-            backgroundColor: 'rgba(0,0,0,0)',
-            paddingBottom: '0'
-        }, 200)
-    }
 
 })
 
@@ -17,7 +6,7 @@ function toggleMenu() {
     var button = $('#mobile-menu-button');
     var menu = $('.menu');
     button.toggleClass('open');
-    menu.slideToggle().toggleClass('hidden');
+    menu.slideToggle().toggleClass('hide-mobile-menu');
 }
 
 function scrollToEl(el) {
@@ -37,6 +26,9 @@ $(document).ready(function() {
 
     $('#logo').click(function() {
         scrollToEl('.header');
+        if ($('#mobile-menu-button').hasClass('open')) {
+            toggleMenu();
+        }
     })
 
 })
