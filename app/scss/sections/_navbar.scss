@@ -1,7 +1,3 @@
-body {
-    height: 1000px;
-}
-
 #logo {
     cursor: pointer;
 }
@@ -10,6 +6,10 @@ body {
     display: inline-block;
     width: 100px;
     padding: 20px 0 0 20px;
+}
+
+.hide-mobile-menu {
+    display: none;
 }
 
 #mobile-menu-button {
@@ -21,6 +21,7 @@ body {
     transform: rotate(0deg);
     transition: .5s ease-in-out;
     cursor: pointer;
+    z-index: 9999;
 }
 
 #mobile-menu-button span {
@@ -71,11 +72,9 @@ body {
     left: 50%;
 }
 
-.hidden {
-    display: none;
-}
-
 .navbar {
+    background-color: rgba(0, 0, 0, .8);
+    padding-bottom: .5em;
     position: fixed;
     top: 0;
     left: 0;
@@ -85,15 +84,13 @@ body {
 
 .menu {
     background-color: rgba(0, 0, 0, .8);
-    z-index: 9998;
     position: fixed;
-    top: 0;
+    top: 4.58em;
     left: 0;
     width: 100%;
 }
 
 .menu ul {
-    margin: 50px 0 0;
     padding: 0;
     width: 100%;
 }
@@ -120,4 +117,42 @@ body {
 .menu-link li:hover {
     color: $text-main;
     background: $accent-secondary;
+}
+
+@media screen and (min-width: 768px) {
+    .hide-mobile-menu {
+        display: inline-block;
+    }
+    .navbar {
+        background: none;
+        position: relative;
+        & #mobile-menu-button {
+            display: none;
+        }
+        & .menu {
+            background: none;
+            width: 40em;
+            position: relative;
+            margin: 0 auto;
+            top: 0;
+            float: right;
+            & ul {
+                padding: 20px 0 0;
+                display: inline-block;
+                & li {
+                    display: inline-block;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+    .navbar .menu {
+        width: 35em;
+        & li {
+            font-size: 1.5em;
+        }
+    }
 }

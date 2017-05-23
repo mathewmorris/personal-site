@@ -50,4 +50,7 @@ img {
             width: 100% / $grid-columns * $i;
         }
     }
+    .hide-mobile-menu {
+        display: hidden;
+    }
 }

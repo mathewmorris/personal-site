@@ -4,6 +4,9 @@
 
 .project-container {
     position: relative;
+    width: 100%;
+    height: 300px;
+    background-blend-mode: overlay;
 }
 
 .project-img {
@@ -31,22 +34,17 @@
 }
 
 .quote {
-    width: 100%;
-    height: 300px;
     background: $dark-main url('../images/random_quote.png') no-repeat center;
-    background-blend-mode: overlay;
 }
 
 .spinner {
-    width: 100%;
-    height: 300px;
     background: $dark-main url('../images/spinners_loaders.png') no-repeat center;
-    background-blend-mode: overlay;
 }
 
 .weather {
-    width: 100%;
-    height: 300px;
     background: $dark-main url('../images/weather_app.png') no-repeat center;
-    background-blend-mode: overlay;
+}
+
+.openbudget {
+    background: $dark-main url('../images/openbudget.png') no-repeat center;
 }
