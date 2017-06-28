@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
 %clearfix {
     *zoom: 1;
     &:before,

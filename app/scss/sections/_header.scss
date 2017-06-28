@@ -1,23 +1,26 @@
-    .header-image {
-        display: block;
-        position: absolute;
-        z-index: -1;
-        width: 100%;
-        height: 100vh;
-        background: url(../images/mountains.png) no-repeat center bottom;
-        background-size: cover;
-    }
-    
-    .header {
-        display: block;
-        height: 100vh;
-    }
-    
-    .header * {
-        text-align: center;
-        padding: 0 1rem;
-    }
-    
-    .hero-text {
-        padding-top: 4em;
-    }
+.header-image {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/mountains.png) no-repeat center bottom;
+    background-size: cover;
+}
+
+.header {
+    display: block;
+    height: 100vh;
+}
+
+.header * {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.portrait {
+    display: block;
+    padding-top: 4em;
+    margin: 2em auto;
+    @include border-radius(50%);
+}
