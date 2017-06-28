@@ -1,0 +1,32 @@
+@media screen and (max-width:480px) {
+    .grayscale {
+        @include grayscale_element(0);
+    }
+    .skills {
+        & p {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.skills-sub {
+    margin: 4em auto;
+}
+
+.logos {
+    padding: 2em 0;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 2em;
+    margin-top: 1em;
+    &:last-child {
+        margin-right: 0;
+    }
+    & strong {
+        text-align: center;
+        display: block;
+        margin-top: .5em;
+    }
+}
