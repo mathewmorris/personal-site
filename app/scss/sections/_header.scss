@@ -1,7 +1,7 @@
 .header-image {
     display: block;
-    position: absolute;
-    z-index: -1;
+    position: fixed;
+    z-index: -2;
     width: 100%;
     height: 100vh;
     background: url(../images/portrait-smiling.jpg) no-repeat center center;
@@ -13,9 +13,13 @@
     height: 100vh;
     position: relative;
     .i-text {
-        text-shadow: 0 0 15px #222;
+        text-shadow: 0 0 15px $dark-main;
         padding-top: 70vh;
     }
+}
+
+.header-cover {
+    background: $dark-main;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {

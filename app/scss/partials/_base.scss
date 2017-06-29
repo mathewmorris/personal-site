@@ -79,6 +79,6 @@ section {
     }
     .wrapper {
         background: rgba(150, 150, 150, .2);
-        box-shadow: 0 0 5px #333;
+        box-shadow: 0 0 5px -4px #333, 0 0 5px -4px #333;
     }
 }

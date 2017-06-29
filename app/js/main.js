@@ -1,10 +1,19 @@
 $(window).scroll(function() {
+    var headerImage = $('.header-image');
+    console.log($(window).scrollTop());
+
+    if ($(window).scrollTop() > window.innerHeight + 200) {
+        headerImage.css("opacity", 0);
+    } else {
+        headerImage.css("opacity", 1);
+    }
 
 })
 
 function toggleMenu() {
     var button = $('#mobile-menu-button');
     var menu = $('.menu');
+
 
     if ($(window).width() < 768) {
         button.toggleClass('open');
