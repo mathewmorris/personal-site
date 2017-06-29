@@ -774,7 +774,8 @@ button {
   .project-container {
     width: 50%;
     display: inline-block;
-    margin: 0; } }
+    margin: 0;
+    padding: 0; } }
 
 /* SKILLS.SCSS */
 @media screen and (max-width: 480px) {
