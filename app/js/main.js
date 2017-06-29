@@ -5,8 +5,12 @@ $(window).scroll(function() {
 function toggleMenu() {
     var button = $('#mobile-menu-button');
     var menu = $('.menu');
-    button.toggleClass('open');
-    menu.slideToggle().toggleClass('hide-mobile-menu');
+
+    if ($(window).width() < 768) {
+        button.toggleClass('open');
+        menu.slideToggle().toggleClass('hide-mobile-menu');
+    }
+
 }
 
 function scrollToEl(el) {

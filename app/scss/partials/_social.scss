@@ -19,6 +19,15 @@
     font-size: 4em;
     text-align: center;
     margin-top: 30px;
+    @media screen and (min-width: 768px) {
+        & a {
+            @include opacity(0.6);
+            @include transition(opacity 0.2s ease);
+            &:hover {
+                @include opacity(1);
+            }
+        }
+    }
 }
 
 .contact {
