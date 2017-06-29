@@ -1,15 +1,3 @@
-$(window).scroll(function() {
-    var headerImage = $('.header-image');
-    console.log($(window).scrollTop());
-
-    if ($(window).scrollTop() > window.innerHeight + 200) {
-        headerImage.css("opacity", 0);
-    } else {
-        headerImage.css("opacity", 1);
-    }
-
-})
-
 function toggleMenu() {
     var button = $('#mobile-menu-button');
     var menu = $('.menu');
@@ -24,7 +12,7 @@ function toggleMenu() {
 
 function scrollToEl(el) {
     $('html, body').animate({
-        scrollTop: $(el).offset().top - 72 + 'px'
+        scrollTop: $(el).offset().top + 'px'
     }, 1500);
 }
 
@@ -38,10 +26,29 @@ $(document).ready(function() {
     });
 
     $('#logo').click(function() {
-        scrollToEl('.header');
+        var windowTop = $(window).scrollTop();
+        if (windowTop != 0) {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1500)
+
+        }
         if ($('#mobile-menu-button').hasClass('open')) {
             toggleMenu();
         }
+
+    })
+
+    $(window).scroll(function() {
+        var headerImage = $('.header-image');
+        console.log($(window).scrollTop());
+
+        if ($(window).scrollTop() > window.innerHeight + 200) {
+            headerImage.css("opacity", 0);
+        } else {
+            headerImage.css("opacity", 1);
+        }
+
     })
 
 })

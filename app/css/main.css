@@ -781,6 +781,9 @@ button {
     padding: 0; } }
 
 /* SKILLS.SCSS */
+.skills {
+  padding-top: 4.5em; }
+
 @media screen and (max-width: 480px) {
   .grayscale {
     -webkit-filter: grayscale(0);
