@@ -1,3 +1,4 @@
+/* MATHEW MORRIS PORTFOLIO MAIN SCSS */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:800|Quicksand:300,700");
 .wrapper,
 .row {
@@ -479,9 +480,11 @@ ul {
 a {
   text-decoration: none; }
 
+/* TYPOGRAPHY.SCSS */
 .toUpper {
   text-transform: uppercase; }
 
+/* BUTTONS.SCSS */
 button {
   font-size: 1.25rem;
   color: #2A292B;
@@ -497,6 +500,7 @@ button {
 .cta {
   text-align: center; }
 
+/* FIGURES.SCSS */
 /* Horizontal Lines after header tags*/
 .h-line {
   display: block;
@@ -513,22 +517,7 @@ button {
   font-size: 24px;
   margin-top: 20px; }
 
-/* Box-sizing all elements for grid layout */
-*,
-*:after,
-*:before {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-/* Fluid Images */
-img {
-  width: auto;
-  max-width: 100%;
-  height: auto !important; }
-
+/* GRIDS.SCSS */
 /* Wrapper Constraints :Mobile*/
 .wrapper {
   width: 100%;
@@ -573,143 +562,7 @@ img {
   .hide-mobile-menu {
     display: hidden; } }
 
-.work {
-  padding: 4.5em 0; }
-
-.project-container {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  background-blend-mode: overlay; }
-
-.project-img {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto; }
-
-.project-info {
-  padding: 5em 0; }
-
-.project-text {
-  font-size: 1.5rem; }
-
-.project-view {
-  width: 200px;
-  height: 50px;
-  color: #2A292B;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  font-style: normal; }
-
-.quote {
-  background: #2A292B url("../images/random_quote.png") no-repeat center; }
-
-.spinner {
-  background: #2A292B url("../images/spinners_loaders.png") no-repeat center; }
-
-.weather {
-  background: #2A292B url("../images/weather_app.png") no-repeat center; }
-
-.openbudget {
-  background: #2A292B url("../images/openbudget.png") no-repeat center; }
-
-@media screen and (min-width: 768px) {
-  .project-container {
-    width: 50%;
-    display: inline-block;
-    margin: 0; } }
-
-.fa {
-  color: white;
-  margin: 0 1rem; }
-
-.fa-free-code-camp {
-  margin-left: .6rem; }
-
-.social-1 {
-  margin-left: .75rem; }
-
-.social-2 {
-  margin-bottom: .75rem; }
-
-.social {
-  font-size: 4em;
-  text-align: center;
-  margin-top: 30px; }
-  @media screen and (min-width: 768px) {
-    .social a {
-      opacity: 0.6;
-      filter: alpha(opacity=60);
-      -webkit-transition: opacity 0.2s ease;
-      -moz-transition: opacity 0.2s ease;
-      -ms-transition: opacity 0.2s ease;
-      -o-transition: opacity 0.2s ease;
-      transition: opacity 0.2s ease; }
-      .social a:hover {
-        opacity: 1;
-        filter: alpha(opacity=100); } }
-
-.contact {
-  padding-top: 5em;
-  padding-bottom: 1em; }
-
-.contact-button {
-  margin-bottom: 4em; }
-
-.footer-image {
-  background: url("../images/ocean.png") no-repeat center top;
-  background-size: cover;
-  width: 100%;
-  z-index: -1;
-  height: 100vh;
-  position: absolute;
-  bottom: 0;
-  left: 0; }
-
-@media screen and (max-width: 480px) {
-  .social {
-    font-size: 3em; } }
-
-@media screen and (max-width: 480px) {
-  .grayscale {
-    -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    filter: grayscale(0); }
-  .skills p {
-    font-size: 1.25rem; }
-  .logo {
-    display: inline-block;
-    margin-right: 1.2em;
-    margin-top: 1em;
-    width: 60px; }
-    .logo strong {
-      text-align: center;
-      display: block;
-      margin-top: .5em;
-      font-size: 0.65em; } }
-
-.skills-sub {
-  margin: 4em auto; }
-
-.logos {
-  padding: 2em 0; }
-
-.logo {
-  display: inline-block;
-  margin-right: 2em;
-  margin-top: 1em; }
-  .logo strong {
-    text-align: center;
-    display: block;
-    margin-top: .5em; }
-
-.copyright {
-  font-size: 1rem; }
-
-.last {
-  height: 100vh; }
-
+/* NAVBAR.SCSS */
 #logo {
   cursor: pointer; }
 
@@ -840,6 +693,7 @@ img {
     .navbar .menu li {
       font-size: 1.5em; } }
 
+/* HEADER.SCSS */
 .header-image {
   display: block;
   position: fixed;
@@ -873,3 +727,144 @@ img {
     .header .i-text {
       text-align: left;
       padding-top: 20vh; } }
+
+/* WORK.SCSS */
+.work {
+  padding: 4.5em 0; }
+
+.project-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-blend-mode: overlay; }
+
+.project-img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.project-info {
+  padding: 5em 0; }
+
+.project-text {
+  font-size: 1.5rem; }
+
+.project-view {
+  width: 200px;
+  height: 50px;
+  color: #2A292B;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-style: normal; }
+
+.quote {
+  background: #2A292B url("../images/random_quote.png") no-repeat center; }
+
+.spinner {
+  background: #2A292B url("../images/spinners_loaders.png") no-repeat center; }
+
+.weather {
+  background: #2A292B url("../images/weather_app.png") no-repeat center; }
+
+.openbudget {
+  background: #2A292B url("../images/openbudget.png") no-repeat center; }
+
+@media screen and (min-width: 768px) {
+  .project-container {
+    width: 50%;
+    display: inline-block;
+    margin: 0; } }
+
+/* SKILLS.SCSS */
+@media screen and (max-width: 480px) {
+  .grayscale {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0); }
+  .skills p {
+    font-size: 1.25rem; }
+  .logo {
+    display: inline-block;
+    margin-right: 1.2em;
+    margin-top: 1em;
+    width: 60px; }
+    .logo strong {
+      text-align: center;
+      display: block;
+      margin-top: .5em;
+      font-size: 0.65em; } }
+
+.skills-sub {
+  margin: 4em auto; }
+
+.logos {
+  padding: 2em 0; }
+
+.logo {
+  display: inline-block;
+  margin-right: 2em;
+  margin-top: 1em; }
+  .logo strong {
+    text-align: center;
+    display: block;
+    margin-top: .5em; }
+
+/* CONTACT.SCSS */
+.contact {
+  padding-top: 5em;
+  padding-bottom: 1em; }
+
+.contact-button {
+  margin-bottom: 4em; }
+
+/* FOOTER.SCSS */
+.fa {
+  color: white;
+  margin: 0 1rem; }
+
+.fa-free-code-camp {
+  margin-left: .6rem; }
+
+.social-1 {
+  margin-left: .75rem; }
+
+.social-2 {
+  margin-bottom: .75rem; }
+
+.social {
+  font-size: 4em;
+  text-align: center;
+  margin-top: 30px; }
+  @media screen and (min-width: 768px) {
+    .social a {
+      opacity: 0.6;
+      filter: alpha(opacity=60);
+      -webkit-transition: opacity 0.2s ease;
+      -moz-transition: opacity 0.2s ease;
+      -ms-transition: opacity 0.2s ease;
+      -o-transition: opacity 0.2s ease;
+      transition: opacity 0.2s ease; }
+      .social a:hover {
+        opacity: 1;
+        filter: alpha(opacity=100); } }
+
+@media screen and (max-width: 480px) {
+  .social {
+    font-size: 3em; } }
+
+.copyright {
+  font-size: 1rem; }
+
+.last {
+  height: 100vh; }
+
+.footer-image {
+  background: url("../images/ocean.png") no-repeat center top;
+  background-size: cover;
+  width: 100%;
+  z-index: -1;
+  height: 100vh;
+  position: absolute;
+  bottom: 0;
+  left: 0; }

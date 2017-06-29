@@ -1,3 +1,5 @@
+/* MATHEW MORRIS PORTFOLIO MAIN SCSS */
+
 // Modules and Variables
 @import "partials/base";
 // Partials
@@ -6,10 +8,10 @@
 @import "partials/buttons";
 @import "partials/figures";
 @import "partials/grids";
-@import "partials/projects";
-@import "partials/social";
 // Sections
-@import "sections/skills";
-@import "sections/footer";
 @import "sections/navbar";
 @import "sections/header";
+@import "sections/work";
+@import "sections/skills";
+@import "sections/contact";
+@import "sections/footer";
