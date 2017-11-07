@@ -795,7 +795,7 @@ button {
     display: inline-block;
     margin-right: 1.2em;
     margin-top: 1em;
-    width: 60px; }
+    width: 6em; }
     .logo strong {
       text-align: center;
       display: block;
@@ -809,6 +809,7 @@ button {
   padding: 2em 0; }
 
 .logo {
+  text-align: center;
   display: inline-block;
   margin-right: 2em;
   margin-top: 1em; }
@@ -816,6 +817,8 @@ button {
     text-align: center;
     display: block;
     margin-top: .5em; }
+  .logo.grayscale img {
+    width: 5em; }
 
 /* CONTACT.SCSS */
 .contact {
