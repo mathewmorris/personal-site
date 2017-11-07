@@ -767,6 +767,12 @@ button {
 .spinner {
   background: #2A292B url("../images/spinners_loaders.png") no-repeat center; }
 
+.grlgng {
+  background: #2A292B url("../images/grlgng.jpg") no-repeat center; }
+
+.prohibition {
+  background: #2A292B url("../images/prohibition.jpg") no-repeat center; }
+
 .weather {
   background: #2A292B url("../images/weather_app.png") no-repeat center; }
 
